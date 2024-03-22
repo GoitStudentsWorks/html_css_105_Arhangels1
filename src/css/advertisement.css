@@ -49,6 +49,15 @@
     padding-bottom: 15px;
     width: 160px;
     height: 48px;
+
+    transition: color 250ms linear, 
+    background-color 250ms linear;
+}
+
+.advertisement-link:hover,
+.advertisement-link:focus{
+    color: #0c0c0c;
+    background-color: #fbfbfb;
 }
 
 @media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
