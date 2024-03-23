@@ -49,12 +49,13 @@
 
 .social__icon {
    fill: #fbfbfb;
-   transition: fill 250ms linear;
+   opacity: 0.8;
+   transition: opacity 250ms linear;
 }
 
 .social__link:hover .social__icon,
 .social__link:focus .social__icon {
-   fill: #f3f3f3;
+   opacity: 1;
 }
 
 @media only screen and (min-width: 768px) {
