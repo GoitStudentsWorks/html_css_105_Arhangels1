@@ -1,0 +1,109 @@
+.advertisement-container{
+    background-image: url(../img/advertisement/mobile-background-advertisement.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: #0c0c0c;
+    border-radius: 30px;
+    padding: 60px 28px;
+    max-width: 335px;
+    margin: 0 auto;
+}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.advertisement-description{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+    margin-bottom: 28px;
+}
+
+.gray-text{
+    color: rgba(251, 251, 251, 0.5);
+}
+
+.advertisement-link{
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    color: #fbfbfb;
+    border: 1px solid rgba(251, 251, 251, 0.15);
+    border-radius: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 160px;
+    height: 48px;
+
+    transition: color 250ms linear, 
+    background-color 250ms linear;
+}
+
+.advertisement-link:hover,
+.advertisement-link:focus{
+    color: #0c0c0c;
+    background-color: #fbfbfb;
+}
+
+@media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    .advertisement-container{
+        background-image: url(../img/advertisement/mobile-background-advertisement@2x.png);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .advertisement-container {
+        background-image: url(../img/advertisement/tablet-background-advertisement.png);
+        padding: 80px 64px;
+        max-width: 704px;
+    }
+
+    .advertisement-description{
+        font-size: 48px;
+        margin-bottom: 32px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .advertisement-container {
+        background-image: url(../img/advertisement/tablet-background-advertisement@2x.png);
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .advertisement-container{
+        background-image: url(../img/advertisement/desktop-background-advertisement.png);
+        padding: 83px 80px;
+        min-width: 1150px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .advertisement-description{
+        max-width: 690px;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+    .advertisement-container {
+        background-image: url(../img/advertisement/desktop-background-advertisement@2x.png);
+    }
+}
