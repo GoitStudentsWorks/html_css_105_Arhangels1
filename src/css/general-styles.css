@@ -13,7 +13,26 @@
 }
 /* ============================== /LOGO  ========================== */
 
+/* ============================== SECTION TITLE  ========================== */
 
+.section-title{
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 1;
+   letter-spacing: -0.02em;
+   color: #0c0c0c;
+   margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+   .section-title {
+      font-size: 48px;
+      line-height: 0.92;
+      margin-bottom: 40px;
+   }
+}
+
+/* ============================== /SECTION TITLE  ========================== */
 
 /* =============================== MENU  ========================== */
 .menu__link {
@@ -65,4 +84,19 @@
 }
 /* ============================= /SOCIAL ========================== */
 
+/* ============================= HIDDEN ========================== */
 
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+/* ============================= /HIDDEN ========================== */
