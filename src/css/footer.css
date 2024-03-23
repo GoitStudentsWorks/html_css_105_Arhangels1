@@ -1,5 +1,6 @@
 .page-footer {
    color: #fbfbfb;
+   margin-bottom: 20px;
 }
 
 .page-footer__inner {
@@ -184,6 +185,11 @@
 
 /*------------------ TABLET AND DESKTOP ----------------------*/
 @media only screen and (min-width: 768px) and (max-width: 1280px) {
+
+   .page-footer {
+      margin-bottom: 32qpx;
+   }
+
    .contacts-footer__slogan {
       margin-top: 86px;
    }
