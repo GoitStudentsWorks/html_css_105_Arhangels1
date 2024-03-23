@@ -33,19 +33,18 @@ img {
   max-width: 100%;
   height: auto;
 }
-body{
-  font-family:"Gilroy";
+body {
+  font-family: 'Gilroy';
 }
 /* Мобільні пристрої (375px) */
-  .container {
-    margin: 0 auto;
-    max-width: 375px;
-    padding: 0 20px;
-
-  }
+.container {
+  margin: 0 auto;
+  max-width: 375px;
+  padding: 0 20px;
+}
 
 /* Планшетні пристрої (768px) */
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .container {
     margin: 0 auto;
     max-width: 768px;
