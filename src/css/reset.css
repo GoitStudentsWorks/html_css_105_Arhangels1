@@ -6,14 +6,18 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 p:last-child {
   margin-bottom: 0;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -22,10 +26,15 @@ ul {
 a {
   color: currentColor;
   text-decoration: none;
+  font-style: normal;
 }
 
 button {
+  font-family: inherit;
+  color: currentColor;
   cursor: pointer;
+  border: none;
+  padding: 0;
 }
 
 img {
@@ -33,18 +42,31 @@ img {
   max-width: 100%;
   height: auto;
 }
-body{
-  font-family:"Gilroy";
+
+input {
+  font-family: inherit;
 }
-/* Мобільні пристрої (375px) */
-  .container {
-    margin: 0 auto;
-    max-width: 375px;
-    padding: 0 20px;
 
-  }
+address {
+  font-style: normal;
+}
 
-/* Планшетні пристрої (768px) */
+body {
+  font-family:"Gilroy";
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.7);
+}
+
+/* MOBILE (375px) */
+.container {
+  margin: 0 auto;
+  max-width: 375px;
+  padding: 0 20px;
+}
+
+/* TABLET (768px) */
 @media (min-width: 768px){
   .container {
     margin: 0 auto;
@@ -53,7 +75,7 @@ body{
   }
 }
 
-/* Десктопні пристрої (1280px) */
+/* DESKTOP (1280px) */
 @media (min-width: 1280px) {
   .container {
     margin: 0 auto;
