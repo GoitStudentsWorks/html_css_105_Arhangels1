@@ -1,3 +1,4 @@
+<!-- Sale section -->
 <section class="sale-section">
   <div class="container sale-container">
     <h2 class="sale-h2">Sale</h2>
@@ -80,33 +81,35 @@
       </li>
     </ul>
 
-    <picture>
-      <source
-        media="(min-width:768px )"
-        srcset="
-          ./img/sale/pc-tablet/watch-main.png    1x,
-          ./img/sale/pc-tablet/watch-main@2x.png 2x
-        "
-      />
-      <source
-        media="(max-width:767px )"
-        srcset="
-          ./img/sale/mobile/watch-main-mobile.png    1x,
-          ./img/sale/mobile/watch-main-mobile@2x.png 2x
-        "
-      />
-      <img src="../img/sale/mobile/watch-main-mobile.png" alt="watch main" />
-    </picture>
+    <div class="sale-main-picture-box">
+      <picture>
+        <source
+          media="(min-width:768px )"
+          srcset="
+            ./img/sale/pc-tablet/watch-main.png    1x,
+            ./img/sale/pc-tablet/watch-main@2x.png 2x
+          "
+        />
+        <source
+          media="(max-width:767px )"
+          srcset="
+            ./img/sale/mobile/watch-main-mobile.png    1x,
+            ./img/sale/mobile/watch-main-mobile@2x.png 2x
+          "
+        />
+        <img src="../img/sale/mobile/watch-main-mobile.png" alt="watch main" />
+      </picture>
+    </div>
 
     <div class="sale-description">
       <h3 class="sale-h3">MARQU&reg; Commander (Gen 2) - Carbon Edition</h3>
       <p class="sale-p-tag">Product tag: 706587</p>
       <ul class="sale-description-list">
-        <li class="sale-description-list-item">
-          <p class="sale-description-list-p">&euro;1500</p>
+        <li class="sale-description-list-item-new">
+          <p class="sale-description-list-new-p">&euro;1500</p>
         </li>
-        <li class="sale-description-list-item">
-          <p class="sale-description-list-p">&euro;3000</p>
+        <li class="sale-description-list-item-old">
+          <p class="sale-description-list-old-p">&euro;3000</p>
         </li>
       </ul>
       <p class="sale-product-description">
@@ -139,3 +142,4 @@
     </div>
   </div>
 </section>
+<!-- Sale section -->
