@@ -1,8 +1,3 @@
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -10,6 +5,7 @@ img {
 }
 
 .about-us {
+  max-width: 335px;
   padding: 40px 20px;
   margin: 0 auto;
   display: flex;
@@ -69,6 +65,7 @@ img {
     padding: 0px 32px;
   }
   .about-us {
+    max-width: 768px;
     border-radius: 50px;
     padding: 80px 60px;
   }
@@ -76,6 +73,7 @@ img {
   .about-us-title {
     font-size: 48px;
     line-height: 0.92;
+    margin-bottom: 40px;
   }
 
   .about-us-paragraph {
@@ -87,6 +85,7 @@ img {
 
 @media screen and (min-width: 1158px) {
   .about-us-section {
+    max-width: 1158px;
     padding: 0px 65px;
   }
   .about-us {
@@ -99,6 +98,7 @@ img {
 
   .about-us-title {
     font-size: 48px;
+    margin-bottom: 40px;
     line-height: 0.92;
   }
 
