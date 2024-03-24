@@ -1,3 +1,7 @@
+.reviews-container{
+    margin-bottom: 60px;
+}
+
 .reviews-section-list{
     display: flex;
 }
@@ -48,6 +52,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .reviews-container {
+        margin-bottom: 80px;
+    }
+
     .reviews-section-list{
         gap: 16px;
     }
@@ -68,6 +76,10 @@
 }
 
 @media only screen and (min-width: 1280px) {
+    .reviews-container {
+        margin-bottom: 100px;
+    }
+
     .reviews-section-list {
         gap: 20px;
     }

@@ -1,5 +1,5 @@
 .advertisement-container{
-    background-image: url(../img/advertisement/mobile-background-advertisement.png);
+    background-image: url(/img/advertisement/mobile-background-advertisement.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -8,19 +8,7 @@
     padding: 60px 28px;
     max-width: 335px;
     margin: 0 auto;
-}
-
-.visually-hidden{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    margin-bottom: 60px;
 }
 
 .advertisement-description{
@@ -62,15 +50,16 @@
 
 @media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
     .advertisement-container{
-        background-image: url(../img/advertisement/mobile-background-advertisement@2x.png);
+        background-image: url(/img/advertisement/mobile-background-advertisement@2x.png);
     }
 }
 
 @media only screen and (min-width: 768px) {
     .advertisement-container {
-        background-image: url(../img/advertisement/tablet-background-advertisement.png);
+        background-image: url(/img/advertisement/tablet-background-advertisement.png);
         padding: 80px 64px;
         max-width: 704px;
+        margin-bottom: 80px;
     }
 
     .advertisement-description{
@@ -81,15 +70,16 @@
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
     .advertisement-container {
-        background-image: url(../img/advertisement/tablet-background-advertisement@2x.png);
+        background-image: url(/img/advertisement/tablet-background-advertisement@2x.png);
     }
 }
 
 @media only screen and (min-width: 1280px) {
     .advertisement-container{
-        background-image: url(../img/advertisement/desktop-background-advertisement.png);
+        background-image: url(/img/advertisement/desktop-background-advertisement.png);
         padding: 83px 80px;
         min-width: 1150px;
+        margin-bottom: 100px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -104,6 +94,6 @@
 
 @media only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
     .advertisement-container {
-        background-image: url(../img/advertisement/desktop-background-advertisement@2x.png);
+        background-image: url(/img/advertisement/desktop-background-advertisement@2x.png);
     }
 }
