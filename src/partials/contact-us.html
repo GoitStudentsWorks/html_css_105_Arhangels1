@@ -1,108 +1,110 @@
 <!-- =========== Contact Us Section =========== -->
-<section class="contact-us" id="contact-us">
+<section class="contact-us-section" id="contact-us">
   <div class="container contact-us-container">
-    <h3 class="section-title">Contact us</h3>
-    <form class="contact-us-form">
-      <p class="contact-us-description">
-        Please use the form below to contact us. Enter your name, email, phone,
-        and message and we'll get back to you shortly.
-      </p>
-      <div class="contact-us-field-wrapper">
-        <label for="user-name" class="contact-us-field-label"></label>
-        <div class="contact-us-input-wrapper">
-          <input
-            type="text"
-            class="contact-us-input"
-            name="user-name"
-            id="user-name"
-            pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
-            title="Kateryna"
-            value="Name"
-            required
-          />
-        </div>
+    <h3 class="contact-us-title">Contact us</h3>
+    <div class="contact-us-form-picture">
+      <div class="contact-us-form-container">
+        <form class="contact-us-form">
+          <p class="contact-us-description">
+            Please use the form below to contact us. Enter your name, email,
+            phone, and message and we'll get back to you shortly.
+          </p>
+          <div class="contact-us-field-wrapper">
+            <label for="user-name" class="contact-us-field-label"></label>
+            <div class="contact-us-input-wrapper">
+              <input
+                type="text"
+                class="contact-us-input"
+                name="user-name"
+                id="user-name"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+                title="Kateryna"
+                value="Name"
+                required
+              />
+            </div>
+          </div>
+          <div class="contact-us-field-wrapper">
+            <label for="user-email" class="contact-us-field-label"></label>
+            <div class="contact-us-input-wrapper">
+              <input
+                type="email"
+                class="contact-us-input"
+                name="user-email"
+                id="user-email"
+                value="Email"
+                required
+              />
+            </div>
+          </div>
+          <div class="contact-us-field-wrapper">
+            <label for="user-phone" class="contact-us-field-label"></label>
+            <div class="contact-us-input-wrapper">
+              <input
+                type="tel"
+                class="contact-us-input"
+                name="user-phone"
+                id="user-phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                value="+380"
+                required
+              />
+            </div>
+          </div>
+          <div class="contact-us-field-comment">
+            <label for="user-comment" class="contact-us-field-label"></label>
+            <textarea
+              class="contact-us-message"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Comment"
+              required
+            ></textarea>
+          </div>
+          <button class="contact-us-submit-btn" type="submit">Send</button>
+        </form>
       </div>
-      <div class="contact-us-field-wrapper">
-        <label for="user-email" class="contact-us-field-label"></label>
-        <div class="contact-us-input-wrapper">
-          <input
-            type="email"
-            class="contact-us-input"
-            name="user-email"
-            id="user-email"
-            value="Email"
-            required
-          />
-        </div>
-      </div>
-      <div class="contact-us-field-wrapper">
-        <label for="user-phone" class="contact-us-field-label"></label>
-        <div class="contact-us-input-wrapper">
-          <input
-            type="tel"
-            class="contact-us-input"
-            name="user-phone"
-            id="user-phone"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            title="xxx-xxx-xx-xx"
-            value="+380"
-            required
-          />
-        </div>
-      </div>
-      <div class="contact-us-field-comment">
-        <label for="user-comment" class="contact-us-field-label"></label>
-        <textarea
-          class="contact-us-message"
-          name="user-comment"
-          id="user-comment"
-          placeholder="Comment"
-          required
-        ></textarea>
-      </div>
-      <button class="contact-us-submit-btn" type="submit">Send</button>
-    </form>
-    <div class="contact-us-photo">
-      <picture>
-        <!-- Desktop screen -->
+      <div class="contact-us-photo">
+        <picture>
+          <!-- Desktop screen -->
 
-        <source
-          media="(min-width: 1280px)"
-          srcset="
-            /src/img/contact-us/contact-us-desk-1x.png 1x,
-            /src/img/contact-us/contact-us-desk-2x.png 2x
-          "
-          type="image/jpg"
-        />
-        <!-- Tablet screen -->
+          <source
+            media="(min-width: 1158px)"
+            srcset="
+              ./img/contact-us/contact-us-desk-1x.png 1x,
+              ./img/contact-us/contact-us-desk-2x.png 2x
+            "
+            type="image/png"
+          />
+          <!-- Tablet screen -->
 
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            /src/img/contact-us/contact-us-tab-1x.png 1x,
-            /src/img/contact-us/contact-us-tab-2x.png 2x
-          "
-          type="image/jpg"
-        />
-        <!-- Mobile screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/contact-us/contact-us-tab-1x.png 1x,
+              ./img/contact-us/contact-us-tab-2x.png 2x
+            "
+            type="image/png"
+          />
+          <!-- Mobile screen -->
 
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            /src/img/contact-us/contact-us-mobile-1x.png 1x,
-            /src/img/contact-us/contact-us-mobile-2x.png 2x
-          "
-          type="image/jpg"
-        />
-        <img
-          class="contact-us-img"
-          src="/src/img/contact-us/contact-us-desk-1x.png"
-          alt="Contact us watch photo"
-          height="300"
-          width="360"
-          loading="lazy"
-        />
-      </picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/contact-us/contact-us-mobile-1x.png 1x,
+              ./img/contact-us/contact-us-mobile-2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="contact-us-img"
+            src="./img/contact-us/contact-us-desk-1x.png"
+            alt="Contact us watch photo"
+            loading="lazy"
+          />
+        </picture>
+      </div>
     </div>
   </div>
 </section>
