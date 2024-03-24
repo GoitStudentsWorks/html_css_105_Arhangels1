@@ -1,3 +1,50 @@
+/* =============================== LOGO  ========================== */
+.logo {
+   font-size: 16px;
+   font-weight: 500;
+   letter-spacing: -0.02em;
+   color: #0c0c0c;
+}
+
+@media only screen and (min-width:768px) {
+   .logo {
+      font-size: 20px;
+   }
+}
+/* ============================== /LOGO  ========================== */
+
+/* ============================== SECTION TITLE  ========================== */
+
+.section-title{
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 1;
+   letter-spacing: -0.02em;
+   color: #0c0c0c;
+   margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+   .section-title {
+      font-size: 48px;
+      line-height: 0.92;
+      margin-bottom: 40px;
+   }
+}
+
+/* ============================== /SECTION TITLE  ========================== */
+
+/* =============================== MENU  ========================== */
+.menu__link {
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 1.29;
+   color: #fbfbfb;
+}
+/* ============================== /MENU  ========================== */
+
+
+
 /* ============================= SOCIAL =========================== */
 .social {
    display: flex;
@@ -21,12 +68,36 @@
 
 .social__icon {
    fill: #fbfbfb;
-   transition: fill 250ms linear;
+   opacity: 0.8;
+   transition: opacity 250ms linear;
 }
 
 .social__link:hover .social__icon,
 .social__link:focus .social__icon {
-   fill: #f3f3f3;
+   opacity: 1;
 }
 
-/* =============================== SOCIAL ============================== */
+@media only screen and (min-width: 768px) {
+   .social__item {
+      width: 36px;
+      height: 36px;
+   }
+}
+/* ============================= /SOCIAL ========================== */
+
+/* ============================= HIDDEN ========================== */
+
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+/* ============================= /HIDDEN ========================== */
