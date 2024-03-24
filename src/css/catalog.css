@@ -46,6 +46,7 @@
 }
 
 .catatlog-item {
+    padding: 24px 28px;
 margin-bottom: 20px;
         background: #f3f3f3;
         border: 1px solid rgba(12, 12, 12, 0.05);
@@ -53,13 +54,7 @@ margin-bottom: 20px;
 
     }
 
-          .catalog-description {
-    
-              text-align: left;
-              padding-left: 28px;
-              padding-top: 20px;
-              padding-bottom: 24px;
-          }
+          
 
 .catalog-button {
     display: flex;
@@ -89,8 +84,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 @media only screen and (min-width: 768px) {
     .catalog-section {
         margin-bottom: 80px;
-        margin-left: 32px;
-        margin-right: 32px;
     }
 
     .catalog-button {
@@ -102,6 +95,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .catalog-photo {
         display: flex;
         justify-content: center;
+
     }
 
    
@@ -130,7 +124,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .catatlog-item {
-
+padding: 24px 32px;
         width: calc((100% - 24px) / 2);
         background: #f3f3f3;
         border: 1px solid rgba(12, 12, 12, 0.05);
@@ -138,23 +132,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     }
 
-    .catalog-description {
-        
-                text-align: left;
-                padding-left: 32px;
-                padding-top: 20px;
-                padding-bottom: 24px;
-            }
-
 }
 
 /* DESKTOP */
 
 @media only screen and (min-width: 1280px) {
         .catalog-section {
-                margin-bottom: 80px;
-                margin-left: 65px;
-                margin-right: 65px;
+                margin-bottom: 100px;
             }
         
             
@@ -169,13 +153,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
                 justify-content: center;
             }
         
-            .catalog-description {
-        
-                text-align: left;
-                padding-left: 32px;
-                padding-top: 20px;
-                padding-bottom: 24px;
-            }
         
             .catalog-description-title {
                 margin-bottom: 8px;
