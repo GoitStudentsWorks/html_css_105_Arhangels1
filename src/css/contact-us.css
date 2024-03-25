@@ -1,12 +1,13 @@
 /* =============================== CONTACT US SECTION  ========================== */
 
 .contact-us-section {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .contact-us-form-container {
   padding: 48px 28px;
   margin: 0 auto;
+  margin-bottom: 20px;
   display: flex;
   background: #f3f3f3;
   border-radius: 30px;
@@ -15,7 +16,6 @@
 .contact-us-photo {
   max-width: 335px;
   max-height: 512px;
-  padding: 20px 0 0 0;
   margin-bottom: 0;
 }
 
@@ -106,17 +106,17 @@
 
 @media screen and (min-width: 768px) {
   .contact-us-section {
-   margin-bottom: 80px;
+  padding-bottom: 80px;
   }
 
   .contact-us-form-container {
     padding: 50px 122px;
+    margin-bottom: 40px;
   }
 
   .contact-us-photo {
     max-width: 704px;
     max-height: 556px;
-    padding: 40px 0 0 0;
   }
 
   .contact-us-description {
@@ -157,7 +157,7 @@
 
 @media screen and (min-width: 1280px) {
   .contact-us-section {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 
   .contact-us-form-picture {
