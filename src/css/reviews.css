@@ -1,5 +1,5 @@
 .reviews-container{
-    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 .reviews-section-list{
@@ -53,7 +53,7 @@
 
 @media only screen and (min-width: 768px) {
     .reviews-container {
-        margin-bottom: 80px;
+        padding-bottom: 80px;
     }
 
     .reviews-section-list{
@@ -77,7 +77,7 @@
 
 @media only screen and (min-width: 1280px) {
     .reviews-container {
-        margin-bottom: 100px;
+        padding-bottom: 100px;
     }
 
     .reviews-section-list {
