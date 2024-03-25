@@ -1,31 +1,5 @@
-.header {
-  padding: 20px 0;
-}
-
 html {
   scroll-behavior: smooth;
-}
-
-nav {
-  list-style: none;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
-}
-
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
 }
 
 .header {
@@ -50,22 +24,25 @@ nav {
   height: 100vh;
   right: 0;
   top: 0;
-  transform: translate(100%, 0);
-  transition: transform 1500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  display: none;
+  display: flex;
+  pointer-events: none;
+  opacity: 0;
+  padding-bottom: 40px;
 }
 
 .active {
-  display: flex;
-  transform: translate(0, 0);
+  opacity: 1;
   z-index: 2;
+  pointer-events: all;
 }
 
 .none {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .icon-close {
@@ -73,10 +50,12 @@ nav {
   position: absolute;
   right: 20px;
   z-index: 3;
+  stroke: #fbfbfb;
 }
 
 .icon-burger {
   z-index: 1;
+  stroke: #0c0c0c;
 }
 
 .mobile_menu {
@@ -102,6 +81,7 @@ nav {
   margin-right: auto;
   left: 0;
   right: 0;
+  opacity: 1;
 }
 
 .mobile_nav {
@@ -137,12 +117,8 @@ nav {
   margin-top: auto;
 }
 
-#header .social__item:hover svg {
-  fill: #3350E9;
-}
-
-
-#header .social__link:hover svg {
+#header .social__link:hover .social__icon,
+#header .social__link:focus .social__icon {
   fill: #3350E9;
 }
 
@@ -160,6 +136,10 @@ nav {
 
   .mobile_menu_container {
     min-width: 330px;
+  }
+
+  .mobile_menu_container {
+    padding-bottom: 50px;
   }
 }
 
@@ -190,6 +170,8 @@ nav {
     column-gap: 203px;
     justify-content: space-between;
     width: 100%;
+    opacity: 1;
+    pointer-events: all;
   }
 
   .mobile_nav {
@@ -206,5 +188,13 @@ nav {
   header .social__link {
     border-radius: 10px;
     border: 1px solid rgba(12, 12, 12, 0.10);
+  }
+
+  #header .social__link:hover {
+    border: 1px solid rgba(51, 80, 233, 0.1);
+  }
+
+  #header .social__link:hover {
+    opacity: 0.8;
   }
 }
