@@ -2,12 +2,17 @@
     <div class="header_container container">
         <div class="header_logo_container">
             <a href="../index.html" class="header_logo logo">watchcharm</a>
-            <svg class="icon icon-burger" width="34" height="34">
-            <use href="../img/icons.svg#icon-burger"></use>
-          </svg>
-           <svg class="icon icon-close none" width="34" height="34">
+
+            <button type="button " class="btn-burger btn">
+               <svg class="icon icon-burger" width="34" height="34">
+               <use href="../img/icons.svg#icon-burger"></use>
+               </svg>
+            </button>
+            <button type="button" class="btn-close icon-close none btn">
+               <svg class="icon" width="34" height="34">
             <use href="../img/icons.svg#icon-close"></use>
           </svg>
+            </button>
         </div>
         <div class="mobile_menu_container">
             <nav class="mobile_menu">
@@ -49,9 +54,9 @@
 
 
  <script>
-      const hamburger = document.querySelector(".icon-burger");
+      const hamburger = document.querySelector(".btn-burger");
       const navLinks = document.querySelector(".mobile_menu_container");
-      const close = document.querySelector(".icon-close");
+      const close = document.querySelector(".btn-close");
 
       hamburger.addEventListener("click", () => {
         navLinks.classList.toggle("active");
