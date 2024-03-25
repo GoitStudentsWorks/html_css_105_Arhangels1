@@ -31,7 +31,6 @@ html {
   display: flex;
   pointer-events: none;
   opacity: 0;
-  padding-bottom: 40px;
 }
 
 .active {
@@ -125,6 +124,7 @@ html {
 @media (min-width: 320px) and (max-width: 767px) {
   .mobile_menu_container {
     min-width: 200px;
+    padding-bottom: 40px;
   }
 }
 
