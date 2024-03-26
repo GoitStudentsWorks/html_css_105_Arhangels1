@@ -1,8 +1,13 @@
+.about-us-section {
+  padding-bottom: 60px;
+}
+
 .about-us {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
+
 .about-us-text {
   border-radius: 30px;
   background: #f3f3f3;
@@ -16,11 +21,9 @@
 .about-us-item:not(:last-child) {
   margin-bottom: 20px;
 }
+
 .about-us-picture {
   border-radius: 30px;
-}
-.about-us-section {
-  margin-bottom: 60px;
 }
 
 .about-us-paragraph {
@@ -69,6 +72,7 @@
   .about-us-section {
     padding-bottom: 100px;
   }
+
   .about-us {
     display: flex;
     flex-direction: row;
