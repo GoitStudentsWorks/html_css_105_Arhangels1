@@ -1,8 +1,10 @@
 .page-footer {
    color: #fbfbfb;
-   margin-bottom: 20px;
 }
 
+.page-footer .container {
+   padding-bottom: 20px;
+}
 .page-footer__inner {
    background-color: #0c0c0c;
    border-radius: 30px;
@@ -64,6 +66,14 @@
    row-gap: 8px;
 }
 
+.page-footer__menu-link {
+   transition: color 100ms linear;
+}
+.page-footer__menu-link:hover,
+.page-footer__menu-link:focus {
+   color: rgba(251, 251, 251, 0.5);
+}
+
 .contact-address {
    font-size: 12px;
    line-height: 1.33;
@@ -89,6 +99,7 @@
    color: rgba(251, 251, 251, 0.5);
 }
 
+
 .page-footer__copyright span {
    text-transform: capitalize;
 }
@@ -102,6 +113,16 @@
    text-transform: capitalize;
 }
 
+.page-footer__terms,
+.page-footer__privacy-policy-link {
+   transition: color 100ms linear;
+}
+.page-footer__terms:hover,
+.page-footer__terms:focus,
+.page-footer__privacy-policy-link:hover,
+.page-footer__privacy-policy-link:focus {
+   color: #fbfbfb;
+}
 
 
 /*------------ MOBILE ONLY --------------*/
@@ -124,8 +145,8 @@
 
 /*---------------- TABLET -----------------*/
 @media only screen and (min-width: 768px) {
-   .page-footer {
-      margin-bottom: 32px;
+   .page-footer .container{
+      padding-bottom: 32px;
    }
 
    .contacts-footer {
